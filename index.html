@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Project</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body class="dark:bg-blue-400 relative">
+    <nav
+      class="bg-blue-400 dark:bg-blue-600 h-10 fixed top-0 left-0 right-0 flex justify-between items-center px-4 md:px-8 lg:px-10"
+    >
+      <div
+        id="logo"
+        class="logo font-extrabold text-black dark:text-white text-xl"
+      >
+        <a href="#">Flexbox</a>
+      </div>
+
+      <div
+        id="hamburger-menu"
+        class="relative h-full w-8 py-2 flex flex-col gap-1 justify-between cursor-pointer md:hidden"
+      >
+        <div class="bg-black dark:bg-white w-full h-1 rounded-sm"></div>
+        <div class="bg-black dark:bg-white w-full h-1 rounded-sm"></div>
+        <div class="bg-black dark:bg-white w-full h-1 rounded-sm"></div>
+      </div>
+
+      <div
+        id="links"
+        class="h-fit px-7 p-2 bg-blue-300 dark:bg-blue-400 absolute top-5 right-14 rounded-sm shadow-2xl hidden md:hidden"
+      >
+        <ul class="text-black dark:text-white cursor-pointer">
+          <li
+            class="hover:text-gray-500 active:text-gray-500 focus:text-gray-500 transition-all"
+          >
+            Home
+          </li>
+          <li
+            class="hover:text-gray-500 active:text-gray-500 focus:text-gray-500 transition-all"
+          >
+            About
+          </li>
+          <li
+            class="hover:text-gray-500 active:text-gray-500 focus:text-gray-500 transition-all"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation justify-end hidden md:block">
+        <ul class="flex flex-row gap-2">
+          <li
+            class="text-black dark:text-white hover:text-gray-500 font-medium"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="text-black dark:text-white hover:text-gray-500 font-medium"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="text-black dark:text-white hover:text-gray-500 font-medium"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main
+      class="bg-blue-300 dark:bg-blue-800 md:flex flex-row items-center pt-14"
+    >
+      <div class="">
+        <h1
+          class="font-extrabold text-black dark:text-white text-4xl text-center mb-2 md:"
+        >
+          Flexbox Tutorials
+        </h1>
+
+        <p class="text-center text-black dark:text-white mb-2 md:mt-4 px-4">
+          The <strong>Flexible Box Layout Module</strong> , makes it easier to
+          design flexible responsive layout structure without using float or
+          positioning. It makes our life easier to design and build responsive
+          web pages without having to use tricky hacks and a lot of float and
+          position properties in our CSS code.
+        </p>
+      </div>
+
+      <div class="w-full flex flex-row justify-center">
+        <img class="w-48" src="images.png" alt="" />
+      </div>
+    </main>
+
+    <main
+      class="bg-blue-500 dark:bg-blue-400 h-fit flex flex-col py-4 items-center md:py-4 lg:py-10 lg:flex-row flex-wrap justify-center gap-10"
+    >
+      <div
+        class="bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5"
+      >
+        <div class="flex justify-center gap-4">
+          <img id="img1" class="w-6" src="align-justify-solid (1).svg" />
+          <h1 class="font-bold text-2xl fon-mono">Alignment</h1>
+        </div>
+        <p class="py-2">
+          Alignment is the placement of visual elements so they line up in a
+          composition. In design, we use alignment or group elements.
+        </p>
+      </div>
+      <div
+        class="bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5"
+      >
+        <div class="flex justify-center gap-4">
+          <img
+            id="img2"
+            class="w-8"
+            src="arrows-left-right-to-line-solid (1).svg"
+          />
+          <h1 class="font-bold text-2xl fon-mono">Spacing</h1>
+        </div>
+        <p class="py-2">
+          Spacing refers to the way that typing or printing is arranged on a
+          page, especially in relation to the amount of space that is left
+          between words or lines.
+        </p>
+      </div>
+      <div
+        class="bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5"
+      >
+        <div class="flex justify-center gap-4">
+          <img id="img3" class="w-8" src="map-solid (1).svg" />
+          <h1 class="font-bold text-2xl fon-mono">Uniformity</h1>
+        </div>
+        <p class="py-2">
+          Uniformity the quality or fact of being the same, or of not changing
+          or being different in any way,form or fashion with respect form,
+          shape, size and color
+        </p>
+      </div>
+      <div
+        class="hidden bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5 lg:block"
+      >
+        <div class="flex justify-center gap-4">
+          <img id="img4" class="w-8" src="sliders-solid (1).svg" />
+          <h1 class="font-bold text-2xl font-mono">Properties</h1>
+        </div>
+        <p class="py-2">
+          Property is any item that a person or a business has legal title over.
+          Property can be tangible items, such as houses, cars, or appliances,
+          or it can refer to intangible items
+        </p>
+      </div>
+      <div
+        class="hidden bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5 lg:block"
+      >
+        <div class="flex justify-center gap-4">
+          <img id="img5" class="w-8" src="layer-group-solid (1).svg" />
+          <h1 class="font-bold text-2xl font-mono">Layouts</h1>
+        </div>
+        <p class="py-2">
+          Layout refers to the arrangement of visual elements on a grid to
+          convey a specific message. If the layout is difficult to read, then
+          the design is ineffectively presented.
+        </p>
+      </div>
+      <div
+        class="hidden bg-blue-600 dark:bg-blue-800 shadow-xl rounded-lg text-black dark:text-white text-center h-fit w-3/4 lg:w-1/4 p-5 lg:block"
+      >
+        <div class="flex justify-center gap-4">
+          <img id="img6" class="w-8" src="palette-solid (1).svg" />
+          <h1 class="font-bold text-2xl font-mono">Designs</h1>
+        </div>
+        <p class="py-2">
+          A design is the concept of or proposal for an object, process, or
+          system. The word, design, refers to something that is or has been
+          intentionally created by a thinking agent.
+        </p>
+      </div>
+    </main>
+
+    <footer
+      class="bg-blue-300 dark:bg-blue-600 h-10 flex justify-center items-center"
+    >
+      <p class="text-center text-black dark:text-white lg:py-16">
+        &copy; Copyright 2024
+      </p>
+    </footer>
+  </body>
+</html>
